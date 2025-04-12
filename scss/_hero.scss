@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 220px;
+  .greeting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      line-height: 70px;
+      font-size: 58px;
+      color: $primaryColor;
+      font-weight: 700;
+    }
+  }
+  img {
+    width: 350px;
+    height: 350px;
+  }
+}
