@@ -1,0 +1,200 @@
+.projects-section {
+  display: flex;
+  justify-content: center;
+  .projects {
+    margin-top: 200px;
+
+    .projects-title {
+      text-align: center;
+      h3 {
+        color: $primaryColor;
+        font-size: 48px;
+        line-height: 26px;
+        font-weight: 700;
+      }
+
+      p {
+        color: $secondaryColor;
+        font-size: $mediumTitleFullHD;
+        line-height: 26px;
+        font-weight: 400;
+        margin-top: 50px;
+      }
+    }
+
+    .cards {
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px 35px;
+      .card {
+        width: 375px;
+        height: 568px;
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+
+        .card-img {
+          height: 260px;
+          width: 100%;
+          background-image: url(../images/cards/project-tile-goes-here.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px 20px 0px 0px;
+        }
+
+        .card-description {
+          margin: 27px 31px 25px 28px;
+
+          h3 {
+            color: rgba(0, 0, 0, 1);
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 26px;
+          }
+
+          p {
+            margin-top: 17px;
+            color: $secondaryColor;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+          }
+
+          .project-use {
+            font-weight: 400;
+            font-size: 16px;
+            color: $primaryColor;
+
+            span {
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+          .card-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 21px;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline;
+            align-items: center;
+
+            .live-link,
+            .cod-link {
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+              padding-left: 30px;
+            }
+
+            a {
+              color: rgba(0, 0, 0, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.live-link::before,
+.cod-link::before {
+  content: url("../images/link-icon-link.svg");
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.cod-link::before {
+  content: url("../images/link-icon-github.svg");
+}
+
+@media (max-width: 1024px) {
+  .projects-section {
+    .projects {
+      .cards {
+        margin: 100px 20px;
+        .card {
+          width: calc(50% - 20px);
+
+          .card-description {
+            h3 {
+              font-size: 25px;
+            }
+            p {
+              font-size: 15px;
+            }
+
+            .card-links {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    .projects {
+      .cards {
+        display: grid;
+        .card {
+          display: flex;
+          height: 250px;
+          width: 100%;
+
+          .card-img {
+            border-radius: 20px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .projects-section {
+    .projects {
+      margin: 100px 20px;
+
+      .projects-title {
+        h3 {
+          font-size: 38px;
+        }
+
+        p {
+          margin-bottom: 30px;
+          font-size: 26px;
+        }
+      }
+      .cards {
+        display: contents;
+        .card {
+          display: contents;
+          height: 250px;
+          width: 100%;
+          margin-top: 30px;
+
+          .card-description {
+            margin-top: 20px;
+          }
+
+          .card-img {
+            border-radius: 20px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
