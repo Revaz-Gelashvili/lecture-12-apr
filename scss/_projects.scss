@@ -32,14 +32,11 @@
         height: 568px;
         box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
+        transition: 0.3s all;
 
-        .card-img {
+        img {
           height: 260px;
           width: 100%;
-          background-image: url(../images/cards/project-tile-goes-here.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
           border-radius: 20px 20px 0px 0px;
         }
 
@@ -74,7 +71,7 @@
           .card-links {
             display: flex;
             justify-content: space-between;
-            margin-top: 21px;
+            margin-top: 25px;
             font-size: 16px;
             font-weight: 400;
             text-decoration: underline;
@@ -94,6 +91,10 @@
             }
           }
         }
+      }
+
+      .card:hover {
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.5);
       }
     }
   }
@@ -116,11 +117,25 @@
   content: url("../images/link-icon-github.svg");
 }
 
+@media (max-width: 1194px) {
+  .projects-section {
+    .projects {
+      .cards {
+        margin: 100px 20px;
+        .card {
+          width: calc(50% - 20px);
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .projects-section {
     .projects {
       .cards {
         margin: 100px 20px;
+
         .card {
           width: calc(50% - 20px);
 
@@ -152,9 +167,10 @@
           height: 250px;
           width: 100%;
 
-          .card-img {
+          img {
             border-radius: 20px;
-            height: 250px;
+            height: auto;
+            max-width: 150px;
           }
         }
       }
@@ -189,9 +205,10 @@
             margin-top: 20px;
           }
 
-          .card-img {
+          img {
             border-radius: 20px;
-            height: 250px;
+            height: auto;
+            max-width: 100%;
           }
         }
       }

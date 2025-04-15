@@ -18,6 +18,11 @@
   img {
     width: 350px;
     height: 350px;
+    transition: 0.3s all;
+  }
+
+  img:hover {
+    scale: 1.1;
   }
 }
 
