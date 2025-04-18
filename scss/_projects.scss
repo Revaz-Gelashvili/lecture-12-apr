@@ -1,9 +1,9 @@
 .projects-section {
   display: flex;
   justify-content: center;
+  margin-top: 200px;
   .projects {
-    margin-top: 200px;
-
+    margin-top: 30px;
     .projects-title {
       text-align: center;
       h3 {
@@ -180,8 +180,9 @@
 
 @media (max-width: 690px) {
   .projects-section {
+    margin-top: 50px;
     .projects {
-      margin: 100px 20px;
+      margin: 50px 20px;
 
       .projects-title {
         h3 {

@@ -10,7 +10,7 @@
   <body>
     <!--                                     header                                       -->
 
-    <header>
+    <header id="header">
       <nav class="section">
         <a href="index.html"
           ><img class="page-icon" src="./images/page-icon.svg" alt="icon"
@@ -18,10 +18,10 @@
         <div class="header-right">
           <ul class="nav-bar">
             <li class="nav-options"><a href="index.html">Home</a></li>
-            <li class="nav-options"><a href="#">About</a></li>
-            <li class="nav-options"><a href="#">Tech Stack</a></li>
-            <li class="nav-options"><a href="#">Projects</a></li>
-            <li class="nav-options"><a href="#">Contact</a></li>
+            <li class="nav-options"><a href="#about-me">About</a></li>
+            <li class="nav-options"><a href="#skills">Tech Stack</a></li>
+            <li class="nav-options"><a href="#projects">Projects</a></li>
+            <li class="nav-options"><a href="#contact">Contact</a></li>
           </ul>
           <div class="socials">
             <a href="https://github.com/Revaz-Gelashvili"
@@ -37,7 +37,7 @@
     </header>
 
     <!--                                     hero                                      -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="greeting section">
         <p>
           Hi 👋, <br />
@@ -49,9 +49,15 @@
       </div>
     </section>
 
+    <!--                                     scroll                                      -->
+
+    <div class="scroll-box">
+      <a href="#header"><img src="./images/scroll.svg" alt="scroll" /></a>
+    </div>
+
     <!--                                     skills                                      -->
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
       <div class="section skills">
         <div class="skills-title">
           <h3>My Tech Stack</h3>
@@ -87,7 +93,7 @@
     </section>
 
     <!--                                     Projects                                      -->
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
       <div class="section projects">
         <div class="projects-title">
           <h3>Projects</h3>
@@ -253,9 +259,30 @@
         </div>
       </div>
     </section>
+    <!--                                     about me                                      -->
+    <section class="about-me" id="about-me">
+      <div class="section description-me">
+        <div class="description">
+          <h1>About Me</h1>
+          <div class="img-text">
+            <p>
+              <img src="./images/about-me.svg" alt="about-me-img" />
+              Greetings once again. My name is Revaz, and I reside in Georgia. I
+              am an emerging front-end developer with significant potential. I
+              continuously expand my knowledge of modern technologies, which
+              enables me to craft increasingly sophisticated and visually
+              striking websites. Looking ahead, I aspire to delve into back-end
+              development in order to evolve into a well-rounded full-stack
+              developer. I bring a high level of dedication and a tailored
+              approach to every client and project I undertake.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--                                     footer                                      -->
-    <section class="section-footer">
+    <section class="section-footer" id="contact">
       <div class="section footer">
         <div class="contact">
           <a href="#"><img src="./images/page-icon.svg" alt="page-logo" /></a>
@@ -278,10 +305,10 @@
           <div class="footer-menu">
             <ul class="footer-nav-list">
               <li class=""><a href="index.html">Home</a></li>
-              <li class=""><a href="#">About</a></li>
-              <li class=""><a href="#">Tech Stack</a></li>
-              <li class=""><a href="#">Projects</a></li>
-              <li class=""><a href="#">Contact</a></li>
+              <li class=""><a href="#about-me">About</a></li>
+              <li class=""><a href="#skills">Tech Stack</a></li>
+              <li class=""><a href="#projects">Projects</a></li>
+              <li class=""><a href="#contact">Contact</a></li>
             </ul>
             <img src="./images/menu.svg" alt="menu" />
           </div>

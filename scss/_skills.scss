@@ -1,8 +1,9 @@
 .skills-section {
   display: flex;
   justify-content: center;
+  margin-top: 340px;
   .skills {
-    margin: 340px 20px 0px 20px;
+    margin: 50px 20px;
     .skills-title {
       text-align: center;
 
@@ -55,9 +56,8 @@
 
 @media (max-width: 768px) {
   .skills-section {
+    margin-top: 240px;
     .skills {
-      margin-top: 240px;
-
       .skills-title {
         h3 {
           font-size: $largeTitle768px;
@@ -82,8 +82,8 @@
 
 @media (max-width: 375px) {
   .skills-section {
+    margin-top: 150px;
     .skills {
-      margin-top: 150px;
       .skills-title {
         h3 {
           font-size: $largeTitle375px;
